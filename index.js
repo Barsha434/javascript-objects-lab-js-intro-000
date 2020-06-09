@@ -11,10 +11,9 @@ function updateObjectWithKeyAndValue(object,key, value){
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
   object[key]=value
   return object
+}
 //deletes `key` from a clone of object and
 //returns the new object (it is non-destructive)
-}
-
 //does not modify the original object (it is non-destructive)
 function deleteFromObjectByKey(object,key){
   var x = Object.assign({},object);
